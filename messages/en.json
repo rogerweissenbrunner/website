@@ -1,0 +1,133 @@
+{
+  "site": {
+    "name": "Roger Wei\u00dfenbrunner",
+    "defaultTitle": "Roger Wei\u00dfenbrunner",
+    "titleTemplate": "%s | Roger Wei\u00dfenbrunner",
+    "description": "Full-stack engineer specializing in Ruby, PostgreSQL, and open source. Building reliable software with 20+ years of experience."
+  },
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "services": "Services",
+    "projects": "Projects",
+    "contact": "Contact",
+    "technology": "Technology"
+  },
+  "theme": {
+    "switchToDark": "Switch to dark mode",
+    "switchToLight": "Switch to light mode",
+    "toggle": "Toggle theme"
+  },
+  "lang": {
+    "label": "Language",
+    "names": {
+      "en": "English",
+      "es": "Spanish",
+      "de": "German",
+      "it": "Italian",
+      "fr": "French"
+    }
+  },
+  "home": {
+    "role": "Ruby + PostgreSQL Developer",
+    "imageAlt": "Roger Wei\u00dfenbrunner's profile picture",
+    "coffee": "Buy Me A Coffee"
+  },
+  "about": {
+    "title": "About Me",
+    "p1": "I am a full-stack software engineer with a passion for solving real-world problems and building tools that improve people's lives by turning complex requirements into clean code users can trust. Most of my code is written on top of open source platforms, with security and privacy in mind.",
+    "p2": "Outside of work, I have a wide variety of interests. Among others, I love music, chess, photography, travel, and motorcycles.",
+    "p3Start": "Feel free to",
+    "p3LinkCv": "read my CV",
+    "p3BetweenCvAndWork": ", ",
+    "p3LinkWork": "explore my work",
+    "p3Middle": "and",
+    "p3LinkContact": "contact me",
+    "p3End": "if you need a professional software developer."
+  },
+  "projects": {
+    "title": "Open Source Projects",
+    "p1": "Alongside my professional work, I maintain a growing collection of open source projects: practical tools and desktop software I build for fun, and as a way to stay sharp with new technologies.",
+    "p2": "All my projects listed here are published under open source licenses. Feel free to explore these, open issues, send patches, or simply leave a star to show you found some of these worthwhile.",
+    "whiteNoiseTitle": "White Noise",
+    "whiteNoiseBlurb": "White Noise is a desktop music player for Linux.",
+    "whiteNoiseGithubAria": "White Noise on GitHub",
+    "whiteNoiseCodebergAria": "White Noise on Codeberg"
+  },
+  "projectsWhiteNoise": {
+    "title": "White Noise",
+    "heroAlt": "Screenshot of the White Noise desktop music player on Linux",
+    "p1": "White Noise is a desktop music player for Linux. It is aimed at people with large local libraries who also want internet radio, audio CDs, playlists, and a few quality-of-life touches (covers, MTP devices, ID3 tagging) without the app getting in the way.",
+    "p2Before": "It is a fork and a rewrite of ",
+    "p2Between": ", by ",
+    "p2After": ".",
+    "tagsLabel": "Topics",
+    "viewOnGithub": "View on GitHub",
+    "viewOnCodeberg": "View on Codeberg",
+    "backToProjects": "All Projects"
+  },
+  "services": {
+    "title": "My Services",
+    "rubyTitle": "Ruby on Rails Development",
+    "rubyBody": "Ruby is an open source programming language that started in 1995 and has become popular thanks to the Rails framework, which implements the MVC architecture with patterns that enable convention over configuration. Technical details aside, it enables software developers to focus on the business problems they are solving.",
+    "postgresTitle": "PostgreSQL Database Management",
+    "postgresBody": "PostgreSQL is the most advanced open source relational database management system. It is known for its reliability, extensibility, scalability, performance, and standards compliance. Its feature-rich query system allows analysts to produce complex reports that can be used to transform data into operational knowledge for decision making.",
+    "infoStart": "If you want to know more about the technologies I use, please check out my",
+    "infoLink": "technology stack"
+  },
+  "technology": {
+    "title": "My Technology Stack",
+    "operatingSystems": "Operating Systems",
+    "programmingLanguages": "Programming Languages",
+    "frameworks": "Programming Frameworks",
+    "mobile": "Mobile Development",
+    "databases": "Database Management Systems",
+    "services": "Services",
+    "tools": "Tools"
+  },
+  "contact": {
+    "title": "Contact Me",
+    "nameLabel": "What is your name?",
+    "emailLabel": "What is your email address?",
+    "messageLabel": "Message",
+    "captchaPlaceholder": "Your answer",
+    "captchaError": "Please solve the simple math question correctly.",
+    "submitIdle": "Send",
+    "submitBusy": "Sending...",
+    "success": "Thank you! Your message has been sent.",
+    "genericError": "Something went wrong. Please try again."
+  },
+  "footer": {
+    "copyright": "Copyright (c) 2026 Roger Wei\u00dfenbrunner. All rights reserved."
+  },
+  "meta": {
+    "home": {
+      "title": "Roger Wei\u00dfenbrunner",
+      "description": "Ruby + PostgreSQL Developer. Full-stack engineer with 20+ years of experience building reliable, open source software."
+    },
+    "about": {
+      "title": "About Me",
+      "description": "Full-stack engineer with 20+ years of experience. Open source, security, and privacy-focused development."
+    },
+    "services": {
+      "title": "My Services",
+      "description": "Ruby on Rails development and PostgreSQL database management. Clean, reliable software built on open source."
+    },
+    "projects": {
+      "title": "Open Source Projects",
+      "description": "Open source tools and desktop software by Roger Wei\u00dfenbrunner\u2014shared under libre licenses for the community."
+    },
+    "projectsWhiteNoise": {
+      "title": "White Noise",
+      "description": "White Noise: an open source MP3 player for Linux, written in Vala with GTK. Calm, focused music playback."
+    },
+    "technology": {
+      "title": "My Technology Stack",
+      "description": "Ruby, Node.js, Rails, React, PostgreSQL, Tailwind. Open source technology stack for reliable software."
+    },
+    "contact": {
+      "title": "Contact Me",
+      "description": "Get in touch with Roger Wei\u00dfenbrunner for professional software development, Ruby on Rails, and PostgreSQL consulting."
+    }
+  }
+}
