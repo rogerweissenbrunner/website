@@ -1,0 +1,101 @@
+{
+  "site": {
+    "name": "Roger Wei\u00dfenbrunner",
+    "defaultTitle": "Roger Wei\u00dfenbrunner",
+    "titleTemplate": "%s | Roger Wei\u00dfenbrunner",
+    "description": "Ingeniero full-stack especializado en Ruby, PostgreSQL y software open source. Construyendo software fiable con m\u00e1s de 20 a\u00f1os de experiencia."
+  },
+  "nav": {
+    "home": "Inicio",
+    "about": "Sobre m\u00ed",
+    "services": "Servicios",
+    "contact": "Contacto",
+    "technology": "Tecnolog\u00eda"
+  },
+  "theme": {
+    "switchToDark": "Cambiar a modo oscuro",
+    "switchToLight": "Cambiar a modo claro",
+    "toggle": "Cambiar tema"
+  },
+  "lang": {
+    "label": "Idioma",
+    "names": {
+      "en": "Ingl\u00e9s",
+      "es": "Espa\u00f1ol",
+      "de": "Alem\u00e1n",
+      "it": "Italiano",
+      "fr": "Franc\u00e9s"
+    }
+  },
+  "home": {
+    "role": "Desarrollador Ruby + PostgreSQL",
+    "imageAlt": "Foto de perfil de Roger Wei\u00dfenbrunner",
+    "coffee": "Buy Me A Coffee"
+  },
+  "about": {
+    "title": "Sobre m\u00ed",
+    "p1": "Soy ingeniero de software full-stack con pasi\u00f3n por resolver problemas reales y crear herramientas que mejoran la vida de las personas, transformando requisitos complejos en c\u00f3digo limpio en el que los usuarios pueden confiar. Gran parte de mi c\u00f3digo se basa en plataformas open source, con enfoque en seguridad y privacidad.",
+    "p2": "Fuera del trabajo tengo muchos intereses. Entre otros, me apasionan la m\u00fasica, el ajedrez, la fotograf\u00eda, los viajes y las motocicletas.",
+    "p3Start": "No dudes en",
+    "p3LinkWork": "explorar mi trabajo",
+    "p3Middle": "y",
+    "p3LinkContact": "contactarme",
+    "p3End": "si necesitas un desarrollador de software profesional."
+  },
+  "services": {
+    "title": "Mis servicios",
+    "rubyTitle": "Desarrollo con Ruby on Rails",
+    "rubyBody": "Ruby es un lenguaje de programaci\u00f3n open source que comenz\u00f3 en 1995 y se hizo popular gracias al framework Rails, que implementa la arquitectura MVC con patrones que favorecen la convenci\u00f3n sobre configuraci\u00f3n. M\u00e1s all\u00e1 de los detalles t\u00e9cnicos, permite a los desarrolladores enfocarse en los problemas de negocio que est\u00e1n resolviendo.",
+    "postgresTitle": "Administraci\u00f3n de bases de datos PostgreSQL",
+    "postgresBody": "PostgreSQL es el sistema de gesti\u00f3n de bases de datos relacional open source m\u00e1s avanzado. Es reconocido por su fiabilidad, extensibilidad, escalabilidad, rendimiento y cumplimiento de est\u00e1ndares. Su potente sistema de consultas permite generar informes complejos para transformar datos en conocimiento operativo para la toma de decisiones.",
+    "infoStart": "Si quieres saber m\u00e1s sobre las tecnolog\u00edas que uso, consulta mi",
+    "infoLink": "stack tecnol\u00f3gico"
+  },
+  "technology": {
+    "title": "Mi stack tecnol\u00f3gico",
+    "operatingSystems": "Sistemas operativos",
+    "programmingLanguages": "Lenguajes de programaci\u00f3n",
+    "frameworks": "Frameworks de programaci\u00f3n",
+    "mobile": "Desarrollo m\u00f3vil",
+    "databases": "Sistemas de gesti\u00f3n de bases de datos",
+    "services": "Servicios",
+    "tools": "Herramientas"
+  },
+  "contact": {
+    "title": "Contacto",
+    "nameLabel": "\u00bfC\u00f3mo te llamas?",
+    "emailLabel": "\u00bfCu\u00e1l es tu correo electr\u00f3nico?",
+    "messageLabel": "Mensaje",
+    "captchaPlaceholder": "Tu respuesta",
+    "captchaError": "Resuelve correctamente la pregunta matem\u00e1tica.",
+    "submitIdle": "Enviar",
+    "submitBusy": "Enviando...",
+    "success": "\u00a1Gracias! Tu mensaje ha sido enviado.",
+    "genericError": "Algo sali\u00f3 mal. Int\u00e9ntalo de nuevo."
+  },
+  "footer": {
+    "copyright": "Copyright (c) 2026 Roger Wei\u00dfenbrunner. Todos los derechos reservados."
+  },
+  "meta": {
+    "home": {
+      "title": "Roger Wei\u00dfenbrunner",
+      "description": "Desarrollador Ruby + PostgreSQL. Ingeniero full-stack con m\u00e1s de 20 a\u00f1os creando software fiable y open source."
+    },
+    "about": {
+      "title": "Sobre m\u00ed",
+      "description": "Ingeniero full-stack con m\u00e1s de 20 a\u00f1os de experiencia. Desarrollo centrado en open source, seguridad y privacidad."
+    },
+    "services": {
+      "title": "Mis servicios",
+      "description": "Desarrollo en Ruby on Rails y administraci\u00f3n de PostgreSQL. Software limpio y fiable construido sobre open source."
+    },
+    "technology": {
+      "title": "Mi stack tecnol\u00f3gico",
+      "description": "Ruby, Node.js, Rails, React, PostgreSQL, Tailwind. Stack open source para software fiable."
+    },
+    "contact": {
+      "title": "Contacto",
+      "description": "Ponte en contacto con Roger Wei\u00dfenbrunner para desarrollo profesional de software, Ruby on Rails y consultor\u00eda PostgreSQL."
+    }
+  }
+}

@@ -1,0 +1,3 @@
+Contact: https://rogerweissenbrunner.com/contact
+Expires: 2027-03-24T00:00:00.000Z
+Preferred-Languages: en, es, de, it, fr
