@@ -1,0 +1,148 @@
+@import 'tailwindcss';
+@plugin "tailwindcss-animate";
+
+@import '@fontsource/ibm-plex-sans';
+@import '@fontsource/ibm-plex-serif';
+@import '@fontsource/ibm-plex-mono';
+
+/* Class-based dark mode for theme toggle */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-sans: 'IBM Plex Sans';
+  --font-serif: 'IBM Plex Serif';
+  --font-mono: 'IBM Plex Mono';
+}
+
+html {
+  color-scheme: light dark;
+  background-color: #ffffff;
+}
+
+html.light {
+  color-scheme: light;
+  background-color: #ffffff;
+}
+
+html.dark {
+  color-scheme: dark;
+  background-color: #0f172a;
+}
+
+@media (prefers-color-scheme: dark) {
+  html:not(.light):not(.dark) {
+    background-color: #0f172a;
+  }
+}
+
+body {
+  background-color: transparent;
+}
+
+html.dark body {
+  background-image:
+    url('data:image/svg+xml,%3Csvg%20width%3D%2212%22%20height%3D%2224%22%20viewBox%3D%220%200%2012%2024%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20d%3D%22M2%200h2v12H2V0zm1%2020c1.105%200%202-.895%202-2s-.895-2-2-2-2%20.895-2%202%20.895%202%202%202zM9%208c1.105%200%202-.895%202-2s-.895-2-2-2-2%20.895-2%202%20.895%202%202%202zm-1%204h2v12H8V12z%22%20fill%3D%22%23e2e8f0%22%20fill-opacity%3D%220.04%22%20fill-rule%3D%22evenodd%22%2F%3E%3C%2Fsvg%3E'),
+    linear-gradient(to bottom, #1e293b, #000000);
+  background-size: auto, auto;
+}
+
+@keyframes navbarEnter {
+  from {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-navbar-enter {
+  opacity: 0;
+  transform: translateY(-8px);
+}
+
+html.boot-ready .animate-navbar-enter {
+  animation: navbarEnter 800ms cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+@keyframes navClickBounce {
+  0% {
+    transform: translateY(0) scale(1);
+  }
+  35% {
+    transform: translateY(-4px) scale(1.03);
+  }
+  60% {
+    transform: translateY(0) scale(0.98);
+  }
+  100% {
+    transform: translateY(0) scale(1);
+  }
+}
+
+.nav-click-bounce:active {
+  animation: navClickBounce 300ms ease-out 1;
+}
+
+.nav-hover-glow {
+  transition: text-shadow 180ms ease, filter 180ms ease;
+}
+
+.nav-hover-glow:hover {
+  text-shadow: 0 0 8px rgba(71, 85, 105, 0.45);
+  filter: drop-shadow(0 0 4px rgba(71, 85, 105, 0.35));
+}
+
+.dark .nav-hover-glow:hover {
+  text-shadow: 0 0 10px rgba(226, 232, 240, 0.5);
+  filter: drop-shadow(0 0 5px rgba(148, 163, 184, 0.4));
+}
+
+@keyframes socialClickBounce {
+  0% {
+    transform: translateY(0) scale(1);
+  }
+  35% {
+    transform: translateY(-5px) scale(1.06);
+  }
+  60% {
+    transform: translateY(0) scale(0.97);
+  }
+  100% {
+    transform: translateY(0) scale(1);
+  }
+}
+
+.social-link .social-icon {
+  transition: filter 180ms ease, transform 180ms ease;
+}
+
+.social-link:hover .social-icon {
+  filter: drop-shadow(0 0 7px rgba(71, 85, 105, 0.45));
+}
+
+.dark .social-link:hover .social-icon {
+  filter: drop-shadow(0 0 9px rgba(148, 163, 184, 0.45));
+}
+
+.social-link:active .social-icon {
+  animation: socialClickBounce 320ms ease-out 1;
+}
+
+.profile-glow {
+  transition: filter 220ms ease;
+  filter: drop-shadow(0 0 8px rgba(71, 85, 105, 0.35));
+}
+
+.profile-glow:hover {
+  filter: drop-shadow(0 0 14px rgba(71, 85, 105, 0.55));
+}
+
+.dark .profile-glow {
+  filter: drop-shadow(0 0 10px rgba(148, 163, 184, 0.35));
+}
+
+.dark .profile-glow:hover {
+  filter: drop-shadow(0 0 16px rgba(148, 163, 184, 0.55));
+}

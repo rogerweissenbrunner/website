@@ -1,0 +1,8 @@
+{
+  "reject": [
+    "next",
+    "eslint",
+    "@eslint/js",
+    "eslint-config-next"
+  ]
+}

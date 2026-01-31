@@ -1,0 +1,101 @@
+{
+  "site": {
+    "name": "Roger Wei\u00dfenbrunner",
+    "defaultTitle": "Roger Wei\u00dfenbrunner",
+    "titleTemplate": "%s | Roger Wei\u00dfenbrunner",
+    "description": "Full-Stack-Engineer mit Schwerpunkt Ruby, PostgreSQL und Open Source. Zuverlässige Software mit über 20 Jahren Erfahrung."
+  },
+  "nav": {
+    "home": "Start",
+    "about": "Über mich",
+    "services": "Leistungen",
+    "contact": "Kontakt",
+    "technology": "Technologie"
+  },
+  "theme": {
+    "switchToDark": "Zum dunklen Modus wechseln",
+    "switchToLight": "Zum hellen Modus wechseln",
+    "toggle": "Theme wechseln"
+  },
+  "lang": {
+    "label": "Sprache",
+    "names": {
+      "en": "Englisch",
+      "es": "Spanisch",
+      "de": "Deutsch",
+      "it": "Italienisch",
+      "fr": "Französisch"
+    }
+  },
+  "home": {
+    "role": "Ruby + PostgreSQL Entwickler",
+    "imageAlt": "Profilbild von Roger Wei\u00dfenbrunner",
+    "coffee": "Buy Me A Coffee"
+  },
+  "about": {
+    "title": "Über mich",
+    "p1": "Ich bin Full-Stack-Software-Engineer mit einer Leidenschaft für das Lösen realer Probleme und den Bau von Werkzeugen, die Menschen helfen. Dabei setze ich komplexe Anforderungen in klaren, vertrauenswürdigen Code um. Ein großer Teil meiner Arbeit basiert auf Open-Source-Plattformen mit Fokus auf Sicherheit und Datenschutz.",
+    "p2": "Außerhalb der Arbeit habe ich viele Interessen. Unter anderem liebe ich Musik, Schach, Fotografie, Reisen und Motorräder.",
+    "p3Start": "Du kannst gerne",
+    "p3LinkWork": "meine Arbeit ansehen",
+    "p3Middle": "und",
+    "p3LinkContact": "mich kontaktieren",
+    "p3End": "wenn du einen professionellen Softwareentwickler."
+  },
+  "services": {
+    "title": "Meine Leistungen",
+    "rubyTitle": "Ruby on Rails Entwicklung",
+    "rubyBody": "Ruby ist eine Open-Source-Programmiersprache, die 1995 entstand und durch das Rails-Framework populär wurde. Rails setzt auf die MVC-Architektur und fördert Convention over Configuration. Unabhängig von technischen Details hilft es Entwicklern, sich auf echte Geschäftsprobleme zu konzentrieren.",
+    "postgresTitle": "PostgreSQL Datenbankmanagement",
+    "postgresBody": "PostgreSQL ist das fortschrittlichste Open-Source-System für relationale Datenbanken. Es ist bekannt für Zuverlässigkeit, Erweiterbarkeit, Skalierbarkeit, Performance und Standardkonformität. Das leistungsfähige Abfragesystem erlaubt komplexe Reports, die Daten in operatives Wissen für Entscheidungen verwandeln.",
+    "infoStart": "Wenn du mehr über meine Technologien wissen möchtest, schau dir meinen",
+    "infoLink": "Technologie-Stack"
+  },
+  "technology": {
+    "title": "Mein Technologie-Stack",
+    "operatingSystems": "Betriebssysteme",
+    "programmingLanguages": "Programmiersprachen",
+    "frameworks": "Frameworks",
+    "mobile": "Mobile Entwicklung",
+    "databases": "Datenbankmanagementsysteme",
+    "services": "Dienste",
+    "tools": "Werkzeuge"
+  },
+  "contact": {
+    "title": "Kontakt",
+    "nameLabel": "Wie heißt du?",
+    "emailLabel": "Wie lautet deine E-Mail-Adresse?",
+    "messageLabel": "Nachricht",
+    "captchaPlaceholder": "Deine Antwort",
+    "captchaError": "Bitte löse die einfache Rechenaufgabe korrekt.",
+    "submitIdle": "Senden",
+    "submitBusy": "Wird gesendet...",
+    "success": "Danke! Deine Nachricht wurde gesendet.",
+    "genericError": "Etwas ist schiefgelaufen. Bitte versuche es erneut."
+  },
+  "footer": {
+    "copyright": "Copyright (c) 2026 Roger Wei\u00dfenbrunner. Alle Rechte vorbehalten."
+  },
+  "meta": {
+    "home": {
+      "title": "Roger Wei\u00dfenbrunner",
+      "description": "Ruby + PostgreSQL Entwickler. Full-Stack-Engineer mit über 20 Jahren Erfahrung in zuverlässiger Open-Source-Software."
+    },
+    "about": {
+      "title": "Über mich",
+      "description": "Full-Stack-Engineer mit über 20 Jahren Erfahrung. Fokus auf Open Source, Sicherheit und Datenschutz."
+    },
+    "services": {
+      "title": "Meine Leistungen",
+      "description": "Ruby on Rails Entwicklung und PostgreSQL Datenbankmanagement. Klare, zuverlässige Software auf Open-Source-Basis."
+    },
+    "technology": {
+      "title": "Mein Technologie-Stack",
+      "description": "Ruby, Node.js, Rails, React, PostgreSQL, Tailwind. Open-Source-Stack für zuverlässige Software."
+    },
+    "contact": {
+      "title": "Kontakt",
+      "description": "Kontaktiere Roger Wei\u00dfenbrunner für professionelle Softwareentwicklung, Ruby on Rails und PostgreSQL Beratung."
+    }
+  }
+}
