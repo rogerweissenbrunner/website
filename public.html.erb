@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="<%= I18n.locale.to_s %>">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="IE=edge,chrome=1,requiresActiveX=true" />
+    <meta http-equiv="imagetoolbar" content="false" />
+    <meta name="author" content="Roger Weißenbrunner" />
+    <meta name="description" content="<%= t('application.description') %>" />
+    <meta name="keywords" content="<%= t('application.keywords') %>" />
+    <title><%= content_for(:title) || t('application.home') %> - <%= t('application.name') %></title>
+    <!-- DNS Prefetch -->
+    <meta http-equiv="x-dns-prefetch-control" content="off" />
+    <link rel="dns-prefetch" href="//s3.amazonaws.com" />
+    <!-- HTTP Related -->
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="canonical" href="<%= request.base_url %>/" />
+    <link rel="shortlink" href="<%= request.base_url %>/" />
+    <link rel="sitemap" type="application/xml" title="<%= t('layout.sitemap') %>" href="/sitemap.xml" />
+    <link rel="alternate" type="application/rss+xml" title="<%= t('layout.rss') %>" href="/rss.xml" />
+    <link rel="alternate" type="application/atom+xml" title="<%= t('layout.atom') %>" href="/atom.xml" />
+    <link rel="pingback" href="pingbacks" />
+    <link type="text/plain" rel="author" href="humans.txt" />
+    <!-- Mobile Related -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="apple-mobile-web-app-title" content="<%= content_for(:title) || t('application.home') %> - <%= t('application.name') %>" />
+    <meta name="google" content="nositelinkssearchbox" />
+    <link rel="icon" href="/logo.png" type="image/png">
+    <link rel="icon" href="/logo.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <link rel="apple-touch-icon-precomposed" sizes="180x180" href="apple-touch-icon-180x180.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="167x167" href="apple-touch-icon-167x167.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="apple-touch-icon-152x152.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="apple-touch-icon-144x144.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="apple-touch-icon-120x120.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="apple-touch-icon-114x114.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="76x76" href="apple-touch-icon-76x76.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="60x60" href="apple-touch-icon-60x60.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="apple-touch-icon-57x57.png" />
+    <link rel="apple-touch-icon-precomposed" href="apple-touch-icon.png" />
+    <meta name="application-name" content="<%= content_for(:title) || t('application.home') %> - <%= t('application.name') %>" />
+    <meta name="msapplication-tooltip" content="<%= t('application.description') %>" />
+    <meta name="msapplication-starturl" content="<%= request.base_url %>/" />
+    <meta name="msapplication-navbutton-color" content="#ff0000" />
+    <meta name="msapplication-window" content="width=960;height=600" />
+    <meta name="msapplication-task" content="name=Task 1;action-uri=<%= request.base_url %>;icon-uri=<%= request.base_url %>/favicon.ico" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta itemprop="name" content="<%= content_for(:title) || t('application.home') %> - <%= t('application.name') %>">
+    <meta itemprop="description" content="<%= t('application.description') %>">
+    <meta itemprop="image" content="<%= request.base_url %>/images/logo.png">
+    <meta property="og:title" content="<%= content_for(:title) || t('application.home') %> - <%= t('application.name') %>" />
+    <meta property="og:site_name" content="<%= content_for(:title) || t('application.home') %> - <%= t('application.name') %>" />
+    <meta property="og:description" content="<%= t('application.description') %>" />
+    <meta property="og:image" content="<%= request.base_url %>/images/logo.png" />
+    <meta property="og:url" content="<%= request.base_url %>/" />
+    <meta property="og:locale" content="<%= I18n.locale.to_s %>" />
+    <meta name="robots" content="noindex">
+    <meta name="theme-color" content="#000000">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+    <%= yield :head %>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <%= tag.link rel: "manifest", href: pwa_manifest_path(format: :json) %>
+    <script nonce="<%= content_security_policy_nonce %>">
+      (function(){var t=localStorage.getItem('theme');if(t==='light')document.documentElement.classList.add('light');else if(t==='dark'||!t)document.documentElement.classList.add('dark');})();
+    </script>
+    <%= vite_client_tag %>
+    <%= vite_javascript_tag "public" %>
+  </head>
+  <body class="flex flex-col min-h-screen font-sans bg-white dark:bg-black text-dark dark:text-white" data-controller="video-modal">
+    <!--[if lt IE 9]>
+      <p class="outdated-browser-warning">
+        <%= t('layout.outdated_browser').html_safe %>
+      </p>
+    <[endif]-->
+    <header class="flex absolute top-0 left-0 z-40 flex-col w-full bg-transparent header" data-controller="sticky-header navbar theme" data-theme-initial-value="dark">
+      <div class="max-w-[1320px] mx-auto px-4 w-full flex items-center min-h-[80px] lg:min-h-[100px] min-w-0">
+        <div class="flex shrink-0 items-center">
+          <%= render "partials/logo", wrapper_class: "header-logo block w-full py-6 lg:py-8" %>
+        </div>
+        <div class="flex min-w-0 flex-1 basis-0 items-center justify-end">
+          <button type="button" id="navbarToggler" aria-label="<%= t('layout.mobile_menu') %>" class="flex justify-center items-center w-10 h-10 rounded-lg shrink-0 ring-primary focus:ring-2 xl:hidden" data-action="click->navbar#toggle">
+            <i data-navbar-target="menuIcon" class="text-xl text-black fa-solid fa-bars dark:text-white" aria-hidden="true"></i>
+          </button>
+          <nav id="navbarCollapse" data-navbar-target="collapse" class="navbar absolute right-0 top-full z-30 mt-2 w-[250px] rounded border border-body-color/50 px-6 py-4 duration-300 dark:border-body-color/20 bg-gray-2 dark:bg-[#252b38] xl:visible xl:static xl:mt-0 xl:w-auto xl:border-none xl:bg-transparent dark:xl:bg-transparent xl:p-0 xl:opacity-100 invisible top-[120%] opacity-0 xl:flex xl:items-center">
+            <ul class="block xl:flex xl:items-center xl:space-x-12">
+              <li class="relative group">
+                <a href="<%= root_path %>" class="flex py-2 text-base xl:mr-0 xl:inline-flex xl:px-0 xl:py-6 <%= "text-primary dark:text-white" if controller_name == "public" && action_name == "index" %> text-dark hover:text-primary dark:text-white/70 dark:hover:text-white"><%= t('application.home') %></a>
+              </li>
+              <li class="relative group">
+                <a href="<%= about_path %>" class="flex py-2 text-base xl:mr-0 xl:inline-flex xl:px-0 xl:py-6 <%= "text-primary dark:text-white" if controller_name == "public" && action_name == "about" %> text-dark hover:text-primary dark:text-white/70 dark:hover:text-white"><%= t('layout.about') %></a>
+              </li>
+              <li class="relative group">
+                <a href="<%= blog_path %>" class="flex py-2 text-base xl:mr-0 xl:inline-flex xl:px-0 xl:py-6 <%= "text-primary dark:text-white" if controller_name == "public" && (action_name == "blog" || action_name == "grid" || action_name == "article") %> text-dark hover:text-primary dark:text-white/70 dark:hover:text-white"><%= t('pages.blog') %></a>
+              </li>
+              <li class="relative group" data-controller="submenu">
+                <p data-submenu-trigger data-action="click->submenu#toggle" class="flex justify-between items-center py-2 text-base cursor-pointer text-dark group-hover:text-primary dark:text-white/70 dark:group-hover:text-white xl:mr-0 xl:inline-flex xl:px-0 xl:py-6"><%= t('layout.pages') %> <span class="pl-3"><i class="text-sm fa-solid fa-chevron-down"></i></span></p>
+                <div data-submenu-target="panel" class="submenu relative left-0 top-full z-50 rounded-sm border border-body-color/20 bg-white py-3 shadow-lg transition-[top] duration-300 dark:border-white/10 dark:bg-dark xl:invisible xl:absolute xl:top-[110%] xl:block xl:w-[250px] xl:p-4 xl:opacity-0 xl:shadow-lg xl:group-hover:visible xl:group-hover:top-full hidden">
+                  <a href="<%= contact_path %>" class="block py-2.5 text-sm rounded text-dark hover:text-primary dark:text-white/70 dark:hover:text-white xl:px-3"><%= t('layout.contact_page') %></a>
+                  <a href="<%= news_path %>" class="block py-2.5 text-sm rounded text-dark hover:text-primary dark:text-white/70 dark:hover:text-white xl:px-3"><%= t('layout.blog_grid_page') %></a>
+                  <a href="<%= blog_path %>" class="block py-2.5 text-sm rounded text-dark hover:text-primary dark:text-white/70 dark:hover:text-white xl:px-3"><%= t('layout.blog_sidebar_page') %></a>
+                  <a href="<%= details_path %>" class="block py-2.5 text-sm rounded text-dark hover:text-primary dark:text-white/70 dark:hover:text-white xl:px-3"><%= t('layout.blog_details_page') %></a>
+                </div>
+              </li>
+              <li class="relative group">
+                <a href="<%= contact_path %>" class="flex py-2 text-base xl:mr-0 xl:inline-flex xl:px-0 xl:py-6 <%= "text-primary dark:text-white" if controller_name == "public" && action_name == "contact" %> text-dark hover:text-primary dark:text-white/70 dark:hover:text-white"><%= t('pages.contact') %></a>
+              </li>
+              <li class="relative group" data-controller="submenu">
+                <p data-submenu-trigger data-action="click->submenu#toggle" class="flex justify-between items-center py-2 text-base cursor-pointer text-dark group-hover:text-primary dark:text-white/70 dark:group-hover:text-white xl:mr-0 xl:inline-flex xl:px-0 xl:py-6" aria-haspopup="true" aria-expanded="false" aria-label="<%= t('layout.language') %>"><%= t("layout.locale_name_#{I18n.locale}") %> <span class="pl-3"><i class="text-sm fa-solid fa-chevron-down"></i></span></p>
+                <div data-submenu-target="panel" class="submenu relative left-0 top-full z-50 rounded-sm border border-body-color/20 bg-white py-3 shadow-lg transition-[top] duration-300 dark:border-white/10 dark:bg-dark xl:invisible xl:absolute xl:top-[110%] xl:block xl:w-[250px] xl:p-4 xl:opacity-0 xl:shadow-lg xl:group-hover:visible xl:group-hover:top-full hidden">
+                  <% I18n.available_locales.each do |loc| %>
+                    <% if loc == I18n.locale %>
+                      <span class="block py-2.5 text-sm font-medium rounded text-primary dark:text-white xl:px-3" aria-current="true"><%= t("layout.locale_name_#{loc}") %></span>
+                    <% else %>
+                      <%= link_to t("layout.locale_name_#{loc}"), switch_locale_path(locale: loc), class: "block rounded py-2.5 text-sm text-dark hover:text-primary dark:text-white/70 dark:hover:text-white xl:px-3", data: { turbo: false } %>
+                    <% end %>
+                  <% end %>
+                </div>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="flex gap-2 items-center pl-4 shrink-0 md:gap-4">
+          <a href="<%= root_path %>" class="hidden px-7 py-3 text-base font-medium text-dark hover:opacity-70 dark:text-white md:inline-flex md:items-center"><%= t('layout.sign_in') %></a>
+          <a href="<%= root_path %>" class="hidden px-8 py-3 text-base font-medium text-white rounded-sm transition duration-300 bg-primary shadow-btn hover:bg-opacity-90 md:inline-flex md:items-center md:px-9 lg:px-6 xl:px-9"><%= t('layout.sign_up') %></a>
+          <button type="button" data-action="click->theme#toggle" aria-label="<%= t('layout.theme_toggler') %>" class="theme-toggler-btn inline-flex items-center justify-center rounded-full cursor-pointer size-8 md:h-14 md:w-14 text-black dark:text-white text-[16px] md:text-[20px]">
+            <i data-theme-target="icon" class="theme-toggler-icon fa-solid" aria-hidden="true"></i>
+          </button>
+        </div>
+      </div>
+      <% unless controller_name == "public" && action_name == "index" %>
+        <%= render "partials/breadcrumb", current: breadcrumb_current_label %>
+      <% end %>
+    </header>
+    <main class="flex-1">
+      <%= yield %>
+    </main>
+    <footer class="relative z-10 pt-6 mt-auto bg-white dark:bg-gray-dark md:pt-20 lg:pt-24">
+      <div class="max-w-[1320px] mx-auto px-4 w-full">
+        <div class="hidden flex-wrap -mx-4 md:flex">
+          <div class="px-4 w-full md:w-1/2 lg:w-4/12 xl:w-6/12">
+            <div class="mb-12 max-w-[360px] lg:mb-16">
+              <%= render "partials/logo", wrapper_class: "mb-8 inline-block" %>
+              <p class="mb-9 text-base leading-relaxed text-body-color dark:text-body-color-dark"><%= t('layout.footer_tagline') %></p>
+            </div>
+          </div>
+          <div class="px-4 w-full sm:w-1/2 md:w-1/2 lg:w-2/12 xl:w-2/12">
+            <div class="mb-12 lg:mb-16">
+              <h2 class="mb-10 text-xl font-bold text-black dark:text-white"><%= t('layout.links') %></h2>
+              <ul>
+                <li><a href="<%= about_path %>" class="inline-block mb-4 text-base duration-300 text-body-color hover:text-primary dark:text-body-color-dark dark:hover:text-primary"><%= t('layout.about_us') %></a></li>
+                <li><a href="<%= news_path %>" class="inline-block mb-4 text-base duration-300 text-body-color hover:text-primary dark:text-body-color-dark dark:hover:text-primary"><%= t('layout.project_news') %></a></li>
+                <li><a href="https://rogerweissenbrunner.netlify.app/" class="inline-block mb-4 text-base duration-300 text-body-color hover:text-primary dark:text-body-color-dark dark:hover:text-primary" target="_blank"><%= t('layout.developer') %></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="px-4 w-full md:w-1/2 lg:w-4/12 xl:w-2/12">
+            <div class="mb-12 lg:mb-16">
+              <h2 class="mb-10 text-xl font-bold text-black dark:text-white"><%= t('layout.support_help') %></h2>
+              <ul>
+                <li><a href="<%= contact_path %>" class="inline-block mb-4 text-base duration-300 text-body-color hover:text-primary dark:text-body-color-dark dark:hover:text-primary"><%= t('layout.open_support_ticket') %></a></li>
+                <li><a href="<%= terms_path %>" class="inline-block mb-4 text-base duration-300 text-body-color hover:text-primary dark:text-body-color-dark dark:hover:text-primary"><%= t('layout.terms_of_use') %></a></li>
+                <li><a href="<%= about_path %>" class="inline-block mb-4 text-base duration-300 text-body-color hover:text-primary dark:text-body-color-dark dark:hover:text-primary"><%= t('layout.about') %></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="px-4 w-full md:w-1/2 lg:w-4/12 xl:w-2/12">
+            <div class="mb-12 lg:mb-16">
+              <h2 class="mb-10 text-xl font-bold text-black dark:text-white"><%= t('layout.legal') %></h2>
+              <ul>
+                <li><a href="<%= terms_path %>" class="inline-block mb-4 text-base duration-300 text-body-color hover:text-primary dark:text-body-color-dark dark:hover:text-primary"><%= t('layout.terms_of_use') %></a></li>
+                <li><a href="<%= privacy_path %>" class="inline-block mb-4 text-base duration-300 text-body-color hover:text-primary dark:text-body-color-dark dark:hover:text-primary"><%= t('layout.privacy_policy') %></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="h-px w-full bg-gradient-to-r from-transparent via-[#D2D8E183] to-transparent dark:via-[#959CB183] hidden md:block"></div>
+        <div class="py-4 md:py-8">
+          <p class="text-xs text-center text-body-color dark:text-white md:text-base">
+            <%= t('layout.copyright', author: link_to('Roger Weissenbrunner', 'https://rogerweissenbrunner.netlify.app/', target: '_blank', rel: 'noopener')).html_safe %>
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

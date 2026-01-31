@@ -1,0 +1,7 @@
+/* TEAM */
+Owner: Roger Weissenbrunner
+Contact: /contact
+Site: Personal website
+
+/* TECHNOLOGY */
+Stack: Next.js, React, TypeScript, Tailwind CSS
